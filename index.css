@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: #e3e3e3;
+  font-family: 'Nanum Gothic Coding', monospace;
+  font-size: 2.8vh;
+}
+
+.container {
+  max-width: 55vw;
+  margin: 4vh auto;
+}
+
+#option-buttons {
+  margin-top: 3vh;
+}
+
+.btn {
+  background-color: #171818;
+  border: none;
+  outline: none;
+  border-radius: 1vh;
+  padding: 2.5vh;
+  margin: 1vh 0;
+  color: #db841e;
+  transition: brightness 0.4s;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  font-family: 'Nanum Gothic Coding', monospace;
+  font-size: 2.8vh;
+}
+
+.btn:hover {
+  filter: brightness(150%);
+}
+
+.title {
+  position: absolute;
+  align-self: center;
+  transition: opacity 2s;
+  opacity: 1;
+}
+
+.title2 {
+  opacity: 0;
+}
+
+.title button {
+  background: none;
+  border: none;
+  font-size: 9vh;
+  font-family: 'Nanum Gothic Coding', monospace;
+  color: #e3e3e3;
+  padding: 20vh;
+
+}
+
+.container * {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 2s;
+
+}
+
+.container2 * {
+  opacity: 1;
+  pointer-events: all;
+}
